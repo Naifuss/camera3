@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "camera3",
-    "slug": "camera3",
+    "name": "Camera_Galeria",
+    "slug": "Camera_Galeria",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -35,8 +35,15 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
       ]
-      
     ],
     "experiments": {
       "typedRoutes": true

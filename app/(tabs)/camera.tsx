@@ -16,7 +16,7 @@ export default function App() {
     return (
       <View style={styles.container}>
         <Text style={{ textAlign: 'center' }}>We need your permission to show the camera</Text>
-        <Button onPress={requestPermission} title="grant permission" />
+        <Button onPress={requestPermission} title="Permissão para usar a câmera" />
       </View>
     );
   }
@@ -27,10 +27,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <CameraView style={styles.camera}>
+      <CameraView style={styles.camera} facing={facing}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
-            <Text style={styles.text}>Flip Camera</Text>
+            <Text style={styles.text}>Mudar de câmera</Text>
           </TouchableOpacity>
         </View>
       </CameraView>

@@ -28,7 +28,7 @@ export default function TabLayout() {
           options={{
             title: 'camera',
             tabBarIcon: ({ color, focused }) => (
-              <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+              <TabBarIcon name={focused ? 'camera' : 'camera-outline'} color={color} />
             ),
           }}
         />
